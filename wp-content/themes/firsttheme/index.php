@@ -151,21 +151,104 @@
                 <div id="title-sport"><span>ESPORTES</span></div>
                 
                 <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
+                
+                <div class="sport-info">
+                    <ul>
+                        <li class="sport-autor">Autor</li>
+                        <li class="sport-views">Views</li>
+                        <li class="sport-coment">Coment</li>
+                    </ul>
+                </div> <!-- fim sport-info -->
+                <h1><a href="#">Sed mattis felis at lacus cursus, et condimentum sapien efficitur. Ut eget ligula in ligula ullamcorper venenatis vitae quis eros.</a></h1>
+                
+                <div id="sport-list">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title="" /></a>
+                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu laoreet dolor, et tempus tellus. Nunc nec ullamcorper metus. </a></h2>
+                        </li>
+                    </ul>
+                </div> <!-- fim sport-list -->
             </div><!-- fim sport -->
 
             <div id="saude">
-                Saúde
+                <div id="title-saude"><span>SAÚDE</span></div>
+                
+                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
+                
+                <div class="saude-info">
+                    <ul>
+                        <li class="saude-autor">Autor</li>
+                        <li class="saude-views">Views</li>
+                        <li class="saude-coment">Coment</li>
+                    </ul>
+                </div> <!-- fim sport-info -->
+                <h1><a href="#">Donec maximus orci et ullamcorper ultricies. Cras aliquam, nibh ut iaculis maximus, elit diam laoreet velit, vitae aliquam ipsum metus at orci. </a></h1>
+                
+                <div id="saude-list">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title="" /></a>
+                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu laoreet dolor, et tempus tellus. Nunc nec ullamcorper metus. </a></h2>
+                        </li>
+                    </ul>
+                </div> <!-- fim saude-list -->
             </div><!-- fim saude -->              
         
         </div> <!-- fim bloco-sport-saude -->
+        
+        <div id="bloco-politica-games">
+        
+            <div id="politica">
+                <div id="title-politica"><span>POLÍTICA</span></div>
+                
+                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
+                
+                <div class="politica-info">
+                    <ul>
+                        <li class="politica-autor">Autor</li>
+                        <li class="politica-views">Views</li>
+                        <li class="politica-coment">Coment</li>
+                    </ul>
+                </div> <!-- fim politica-info -->
+                <h1><a href="#">Donec maximus orci et ullamcorper ultricies. Cras aliquam, nibh ut iaculis maximus, elit diam laoreet velit, vitae aliquam ipsum metus at orci. </a></h1>
+                
+                <div id="politica-list">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title="" /></a>
+                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu laoreet dolor, et tempus tellus. Nunc nec ullamcorper metus. </a></h2>
+                        </li>
+                    </ul>
+                </div> <!-- fim politica-list -->
+            </div><!-- fim politica --> 
 
-        <div id="politica">
-            Politica
-        </div><!-- fim politica --> 
+            <div id="games">
+                <div id="title-games"><span>GAMES</span></div>
+                
+                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
+                
+                <div class="games-info">
+                    <ul>
+                        <li class="games-autor">Autor</li>
+                        <li class="games-views">Views</li>
+                        <li class="games-coment">Coment</li>
+                    </ul>
+                </div> <!-- fim politica-info -->
+                <h1><a href="#">Donec maximus orci et ullamcorper ultricies. Cras aliquam, nibh ut iaculis maximus, elit diam laoreet velit, vitae aliquam ipsum metus at orci. </a></h1>
+                
+                <div id="games-list">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title="" /></a>
+                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu laoreet dolor, et tempus tellus. Nunc nec ullamcorper metus. </a></h2>
+                        </li>
+                    </ul>
+                </div> <!-- fim games-list -->
+            </div><!-- fim games -->        
+        
+        </div><!-- fim bloco-politica-games -->
 
-        <div id="games">
-            Games
-        </div><!-- fim games -->
 
     </div> <!-- fim content -->
 

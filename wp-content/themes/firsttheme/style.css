@@ -142,7 +142,97 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
 #entreterimento .post-entreterimento p{ font: 14px arial; color: #888; }
 
 /*=== Bloco sport Saude ===*/
-#block-sport-saude{ width: 100%; float: left; background: #999; }
+#block-sport-saude{ width: 100%; float: left; border-bottom: 1px solid #efeeee; padding: 10px 0; }
+/*===  sport ===*/
+#sport{ width: 330px; float: left; }
+#title-sport{ border-bottom: 2px solid #efeeee; padding:5px 0; }
+#title-sport span{ font: 22px arial; font-weight: bold; color: #292929; border-bottom: 2px solid #ed5353; padding: 5px 0;}
+#sport img{ width: 330px; height: 180px; margin: 20px 0 0 0; float: left; }
+.sport-info{ width: 100%; float: left; background: #ed5353; }
+.sport-info ul{ margin: 0; padding: 0; list-style: none; }
+.sport-info ul li{ float: left; width: 60px; color: #f8f8f8; padding: 4px 24px; }
+.sport-info ul .sport-autor{ background: url(images/icon-autor-branco.png) no-repeat left center }
+.sport-info ul .sport-views{ background: url(images/icon-view-branco.png) no-repeat left center }
+.sport-info ul .sport-coment{ background: url(images/icon-coment-branco.png) no-repeat left center }
+#sport h1{ font: 14px arial; font-weight: bold; float: left; margin: 10px 0; }
+#sport h1 a{ color: #444; text-decoration: none; }
+#sport h1 a:hover{ color: #ed5353; text-decoration: underline; }
+#sport #sport-list{ float: left; }
+#sport #sport-list ul{ margin: 0; padding: 0; list-style: none; }
+#sport #sport-list ul li{ width: 100%; float: left; border-top: 1px solid #efeeee; padding: 10px 0; }
+#sport #sport-list ul li img{ width: 75px; height: 70px; float: left; margin: 0 8px 0 0;;}
+#sport #sport-list h2 { font: 14px arial; padding: 6px 0; }
+#sport #sport-list h2 a{ color: #444; text-decoration: none; }
+#sport #sport-list h2 a:hover{ color: #ed5353; text-decoration: underline; }
+
+/*=== Saude ===*/
+#saude{ width: 330px; float: right; }
+#title-saude{ border-bottom: 2px solid #efeeee; padding:5px 0; }
+#title-saude span{ font: 22px arial; font-weight: bold; color: #292929; border-bottom: 2px solid #ed5353; padding: 5px 0;}
+#saude img{ width: 330px; height: 180px; margin: 20px 0 0 0; float: left; }
+.saude-info{ width: 100%; float: left; background: #ed5353; }
+.saude-info ul{ margin: 0; padding: 0; list-style: none; }
+.saude-info ul li{ float: left; width: 60px; color: #f8f8f8; padding: 4px 24px; }
+.saude-info ul .saude-autor{ background: url(images/icon-autor-branco.png) no-repeat left center }
+.saude-info ul .saude-views{ background: url(images/icon-view-branco.png) no-repeat left center }
+.saude-info ul .saude-coment{ background: url(images/icon-coment-branco.png) no-repeat left center }
+#saude h1{ font: 14px arial; font-weight: bold; float: left; margin: 10px 0; }
+#saude h1 a{ color: #444; text-decoration: none; }
+#saude h1 a:hover{ color: #ed5353; text-decoration: underline; }
+#saude #saude-list{ float: left; }
+#saude #saude-list ul{ margin: 0; padding: 0; list-style: none; }
+#saude #saude-list ul li{ width: 100%; float: left; border-top: 1px solid #efeeee; padding: 10px 0; }
+#saude #saude-list ul li img{ width: 75px; height: 70px; float: left; margin: 0 8px 0 0;;}
+#saude #saude-list h2 { font: 14px arial; padding: 6px 0; }
+#saude #saude-list h2 a{ color: #444; text-decoration: none; }
+#saude #saude-list h2 a:hover{ color: #ed5353; text-decoration: underline; }
+
+/*== bloco-politica-games ===*/
+#bloco-politica-games{ width: 100%; float: left; border-bottom: 1px solid #efeeee; padding: 10px 0; }
+
+/*=== politica ===*/
+#politica{ width: 330px; float: left; }
+#title-politica{ border-bottom: 2px solid #efeeee; padding:5px 0; }
+#title-politica span{ font: 22px arial; font-weight: bold; color: #292929; border-bottom: 2px solid #ed5353; padding: 5px 0;}
+#politica img{ width: 330px; height: 180px; margin: 20px 0 0 0; float: left; }
+.politica-info{ width: 100%; float: left; background: #ed5353; }
+.politica-info ul{ margin: 0; padding: 0; list-style: none; }
+.politica-info ul li{ float: left; width: 60px; color: #f8f8f8; padding: 4px 24px; }
+.politica-info ul .politica-autor{ background: url(images/icon-autor-branco.png) no-repeat left center }
+.politica-info ul .politica-views{ background: url(images/icon-view-branco.png) no-repeat left center }
+.politica-info ul .politica-coment{ background: url(images/icon-coment-branco.png) no-repeat left center }
+#politica h1{ font: 14px arial; font-weight: bold; float: left; margin: 10px 0; }
+#politica h1 a{ color: #444; text-decoration: none; }
+#politica h1 a:hover{ color: #ed5353; text-decoration: underline; }
+#politica #politica-list{ float: left; }
+#politica #politica-list ul{ margin: 0; padding: 0; list-style: none; }
+#politica #politica-list ul li{ width: 100%; float: left; border-top: 1px solid #efeeee; padding: 10px 0; }
+#politica #politica-list ul li img{ width: 75px; height: 70px; float: left; margin: 0 8px 0 0;;}
+#politica #politica-list h2 { font: 14px arial; padding: 6px 0; }
+#politica #politica-list h2 a{ color: #444; text-decoration: none; }
+#politica #politica-list h2 a:hover{ color: #ed5353; text-decoration: underline; } 
+
+/*=== games ===*/
+#games{ width: 330px; float: right; }
+#title-games{ border-bottom: 2px solid #efeeee; padding:5px 0; }
+#title-games span{ font: 22px arial; font-weight: bold; color: #292929; border-bottom: 2px solid #ed5353; padding: 5px 0;}
+#games img{ width: 330px; height: 180px; margin: 20px 0 0 0; float: left; }
+.games-info{ width: 100%; float: left; background: #ed5353; }
+.games-info ul{ margin: 0; padding: 0; list-style: none; }
+.games-info ul li{ float: left; width: 60px; color: #f8f8f8; padding: 4px 24px; }
+.games-info ul .games-autor{ background: url(images/icon-autor-branco.png) no-repeat left center }
+.games-info ul .games-views{ background: url(images/icon-view-branco.png) no-repeat left center }
+.games-info ul .games-coment{ background: url(images/icon-coment-branco.png) no-repeat left center }
+#games h1{ font: 14px arial; font-weight: bold; float: left; margin: 10px 0; }
+#games h1 a{ color: #444; text-decoration: none; }
+#games h1 a:hover{ color: #ed5353; text-decoration: underline; }
+#games #games-list{ float: left; }
+#games #games-list ul{ margin: 0; padding: 0; list-style: none; }
+#games #games-list ul li{ width: 100%; float: left; border-top: 1px solid #efeeee; padding: 10px 0; }
+#games #games-list ul li img{ width: 75px; height: 70px; float: left; margin: 0 8px 0 0;;}
+#games #games-list h2 { font: 14px arial; padding: 6px 0; }
+#games #games-list h2 a{ color: #444; text-decoration: none; }
+#games #games-list h2 a:hover{ color: #ed5353; text-decoration: underline; } 
 
 /*=== Sidebar ===*/
 #sidebar{ width: 280px; float: right; overflow: hidden; background: #222; }
