@@ -246,3 +246,18 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
 #sidebar-vistos ul li a{ color: #555; text-decoration: none; }
 #sidebar-vistos ul li a:hover{ color: #ed5353; text-decoration: underline; }
 #sidebar-vistos .vistos-number{ padding: 10px; font: 18px arial; color: #fff; float: left; background: #ed5353; margin-right: 10px; }
+
+/*== sidebar colunistas ===*/
+#sidebar-colunistas{ width: 100%; float: left; margin-top: 30px; }
+#sidebar-colunistas #title-colunistas{ border-bottom: 2px solid #efeeee; padding: 5px 0; }
+#sidebar-colunistas #title-colunistas span{ font: 22px arial; font-weight: bold; color: #292929; padding: 5px 0; border-bottom: 2px solid #ed5353; }
+#sidebar-colunistas .colunistas{ width: 100%; float: left; }
+#sidebar-colunistas .colunistas ul{ margin: 0; padding: 0; list-style: none; }
+#sidebar-colunistas .colunistas ul li{ float: left; width: 100%; padding: 18px 0; border-bottom: 1px solid #efeeee; }
+#sidebar-colunistas .colunistas ul li img{ float: left; }
+#sidebar-colunistas .colunistas ul li h1{ height: 46px; font: 16px arial; font-weight: bold; width: 195px; float: left; margin-left: 10px; }
+#sidebar-colunistas .colunistas ul li h1 a{ color: #292929; text-decoration: none; }
+#sidebar-colunistas .colunistas ul li h1 a:hover{ color: #ed5353; text-decoration: underline; }
+#sidebar-colunistas .info-colunistas{ width: 205px; float: left; background: #ed5353; }
+#sidebar-colunistas .info-colunistas ul{ margin: 0; padding: 0; list-style: none; }
+#sidebar-colunistas .info-colunistas ul li{ float: left; width: 20px; height: 20px; padding: 0; margin: 2px 14px; border-bottom: none; }
