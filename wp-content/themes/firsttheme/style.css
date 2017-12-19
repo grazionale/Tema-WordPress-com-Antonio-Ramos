@@ -1,0 +1,59 @@
+/*
+
+Theme Name: First Theme / Portal
+Description: Portal do Curso WordPress - Antonio Ramos, by Gabriel Grazionale
+Author: Gabriel Grazionale
+Version: 1.0
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
+}
+
+/*=== Header ===*/
+#header{ width: 100%; background: #fff;}
+
+#header-superior{ width: 100%; background: #f8f8f8; border-bottom: 1px solid #e1e1e1;}
+
+#header-superior-content{ width: 1000px; margin: 0 auto; overflow: hidden;}
+
+#header-paginas{ float: left;}
+
+#header-paginas ul{ margin: 0; padding: 0; list-style: none;}
+
+#header-paginas ul li{ float: left;}
+
+#header-paginas ul li a{ color: #777; text-decoration: none; padding: 20px 10px; /* dir/Esq e Cima/Baixo */ display: block; border-right: 1px solid #e1e1e1;}
+
+#header-paginas ul li a:hover{ color: #ed5353; background: #eee;}
+
+#header-social{ float: right;}
+
+#header-social a{ display: block; margin: 12px 0 0 10px; float: left;}
+
+#header-content{ width: 1000px; margin: 0 auto; overflow: hidden;}
+
+#logo{ float: left; padding: 50px 0; }
+
+#search { float: right; margin-top: 50px}
+
+#search input{ float: left; border: 0; padding: 14px 8px; width: 270px; background: #f5f5f5; }
+
+#search .btn-search{ background: #f5f5f5 url(images/icon-search.png) no-repeat center; width: 35px; height: 43px; cursor: pointer;}
+
+#login{ float: right; margin-top: 60px; margin-right: 50px; }
+
+#login ul{ margin: 0; padding: 0; list-style: none; }
+
+#login ul .logar a { background: #292929; }
+
+#login ul .registre a { background: #171717; }
+
+#login ul li{ float: left; }
+
+#login ul li a{ padding: 6px; display: block; text-decoration: none; color: #fff; }
