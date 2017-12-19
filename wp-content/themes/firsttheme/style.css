@@ -235,6 +235,14 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
 #games #games-list h2 a:hover{ color: #ed5353; text-decoration: underline; } 
 
 /*=== Sidebar ===*/
-#sidebar{ width: 280px; float: right; overflow: hidden; background: #222; }
+#sidebar{ width: 280px; float: right; overflow: hidden; margin-top: 30px; }
 
-
+/*=== Sidebar vistos ===*/
+#sidebar-vistos{ width: 100%; float: left; }
+#sidebar-vistos #title-vistos{ border-bottom: 2px solid #efeeee; padding: 5px 0; }
+#sidebar-vistos #title-vistos span{ font: 22px arial; font-weight: bold; color: #292929; padding: 5px 0; border-bottom: 2px solid #ed5353; }
+#sidebar-vistos ul{ margin: 0; padding: 0; list-style: none; }
+#sidebar-vistos ul li{ width: 100%; float: left; border-bottom: 1px solid #efeeee; padding: 10px 0; }
+#sidebar-vistos ul li a{ color: #555; text-decoration: none; }
+#sidebar-vistos ul li a:hover{ color: #ed5353; text-decoration: underline; }
+#sidebar-vistos .vistos-number{ padding: 10px; font: 18px arial; color: #fff; float: left; background: #ed5353; margin-right: 10px; }
