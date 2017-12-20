@@ -29,11 +29,8 @@
             <div id="header-paginas">
                 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Arquivos</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="<?php bloginfo('home');?>">Home</a></li>
+                    <?php wp_list_pages('title_li='); ?> <!-- lista as paginas criadas no wordpress -->
                 </ul>
                 
                 
@@ -41,10 +38,10 @@
 
             <div id="header-social">
                 
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon-face.png" rel="" title="" /></a>
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon-whatsapp.png" rel="" title="" /></a>
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon-skype.png" rel="" title="" /></a>
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/icon-youtube.png" rel="" title="" /></a>
+                <a href="www.facebook.com/gabrielgrazionale"><img src="<?php bloginfo('template_url'); ?>/images/icon-face.png" rel="" title="" /></a>
+                <a href="web.whatsapp.com"><img src="<?php bloginfo('template_url'); ?>/images/icon-whatsapp.png" rel="" title="" /></a>
+                <a href="www.skype.com"><img src="<?php bloginfo('template_url'); ?>/images/icon-skype.png" rel="" title="" /></a>
+                <a href="www.youtube.com"><img src="<?php bloginfo('template_url'); ?>/images/icon-youtube.png" rel="" title="" /></a>
             </div><!-- fim header-social -->                    
 
         </div><!-- fim header-superior-content -->
@@ -54,7 +51,7 @@
     <div id="header-content">
 
         <div id="logo">
-            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" rel="" title="" /></a>
+            <a href="<?php bloginfo('home');?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" rel="" title="" /></a>
         </div> <!-- fim logo -->
 
         <div id="search">
@@ -66,8 +63,8 @@
         
         <div id="login">
             <ul>
-                <li class="logar"><a href="#">Login</a></li>
-                <li class="registre"><a href="#">Registre-se</a></li>
+                <li class="logar"><a href="http://wordpress/Projeto%203%20-%20Antonio%20Ramos%20-%20Desenvolvendo%20tema/wp-admin">Login</a></li>
+                <li class="registre"><a href="http://wordpress/Projeto%203%20-%20Antonio%20Ramos%20-%20Desenvolvendo%20tema/wp-login.php?action=register">Registre-se</a></li>
             </ul>
         </div> <!-- fim login -->
 
@@ -78,35 +75,11 @@
 
         <div id="nav-content">
             <ul>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Esportes</a>
-                
-                    <ul>
-                        <li><a href="#">Futebol</a></li>
-                        <li><a href="#">Natação</a></li>
-                        <li><a href="#">Basquete</a></li>
-                        <li><a href="#">Vôlei</a></li>
-                        <li><a href="#">Tênis</a></li>
-                        <li><a href="#">MMA</a></li>
-                        <li><a href="#">Judô</a></li>
-                        
-                    </ul>
-                    
-                </li>
-                <li><a href="#">Tecnologia</a></li>
-                <li><a href="#">Entreterimento</a></li>
-                <li><a href="#">Multimidias</a>
-                
-                    <ul>
-                        <li><a href="#">Músicas</a></li>
-                        <li><a href="#">Vídeos</a></li>
-                        <li><a href="#">Fotos</a></li>
-                    </ul>                
-                    
-                </li>
-                <li><a href="#">Saúde</a></li>
-                <li><a href="#">Política</a></li>
-                <li><a href="#">Games</a></li>
+                <?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2'); ?> <!-- exibe todas as categorias, mesmo que elas não tenha postagens -->
+                <!-- title_li= exibe todas as cateogiras com pelo menos 1 postagem -->
+                <!-- hide_empty=0 exibe todas as categorias, inclusive com número de postagem 0 -->
+                <!-- orderby utilizado para ordenar as categorias no menu de navegação na ordem que está la no wordpress na criação de categorias -->
+                <!-- exclude=4,2,3 exclui determinada categoria do menu de navegação, o 4 ou 2 ou 3 são os ID das categorias que foram gerados automaticamente pelo wordpress-->
             </ul>
         </div> <!-- fim nav-content -->
 
