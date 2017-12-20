@@ -115,7 +115,30 @@
     </div><!-- fim sidebar-publi -->            
 
     <div id="sidebar-coment">
-        Mais comentadas
+        <div id="title-coment"><span>MAIS COMENTADAS</span></div>
+        
+        <ul>
+            <li>
+                <span class="coment-number">1</span>
+                <a href="#">Quisque tincidunt, libero eu varius auctor, risus odio</a>
+            </li>
+            <li>
+                <span class="coment-number">2</span>
+                <a href="#">suscipit turpis commodo non. Donec hendrerit massa</a>
+            </li>
+            <li>
+                <span class="coment-number">3</span>
+                <a href="#">aliquam mi vitae elementum. In accumsan tempor laoreet.</a>
+            </li>
+            <li>
+                <span class="coment-number">4</span>
+                <a href="#">lobortis sed et dolor. Cras fringilla erat pulvinar nunc mollis</a>
+            </li>
+            <li>
+                <span class="coment-number">5</span>
+                <a href="#">Maecenas vel enim eget quam imperdiet consectetur.</a>
+            </li>            
+        </ul>
     </div><!-- fim sidebar-coment -->    
 
     <div id="sidebar-facebook">

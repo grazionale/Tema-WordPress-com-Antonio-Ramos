@@ -270,3 +270,13 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
 #sidebar-publi .publi-maior{ width: 280px; height: 230px; float: left; background: #999; margin: 18px 0; }
 #sidebar-publi .publi-left{ width: 125px; height: 125px; float: left; background: #999; }
 #sidebar-publi .publi-right{ width: 125px; height: 125px; float: right; background: #999; }
+
+/*=== Sidebar coment ===*/
+#sidebar-coment{ width: 100%; float: left; margin-top: 30px; }
+#sidebar-coment #title-coment{ border-bottom: 2px solid #efeeee; padding: 5px 0; }
+#sidebar-coment #title-coment span{ font: 22px arial; font-weight: bold; color: #292929; padding: 5px 0; border-bottom: 2px solid #ed5353; }
+#sidebar-coment ul{ margin: 0; padding: 0; list-style: none; }
+#sidebar-coment ul li{ width: 100%; float: left; border-bottom: 1px solid #efeeee; padding: 10px 0; }
+#sidebar-coment ul li a{ color: #555; text-decoration: none; }
+#sidebar-coment ul li a:hover{ color: #ed5353; text-decoration: underline; }
+#sidebar-coment .coment-number{ padding: 10px; font: 18px arial; color: #fff; float: left; background: #ed5353; margin-right: 10px; }
