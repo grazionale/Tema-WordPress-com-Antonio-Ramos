@@ -75,11 +75,13 @@
 
         <div id="nav-content">
             <ul>
-                <?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2'); ?> <!-- exibe todas as categorias, mesmo que elas não tenha postagens -->
+                <?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2&exclude=16'); ?> <!-- exibe todas as categorias, mesmo que elas não tenha postagens -->
                 <!-- title_li= exibe todas as cateogiras com pelo menos 1 postagem -->
                 <!-- hide_empty=0 exibe todas as categorias, inclusive com número de postagem 0 -->
                 <!-- orderby utilizado para ordenar as categorias no menu de navegação na ordem que está la no wordpress na criação de categorias -->
                 <!-- exclude=4,2,3 exclui determinada categoria do menu de navegação, o 4 ou 2 ou 3 são os ID das categorias que foram gerados automaticamente pelo wordpress-->
+                <!-- depth=2 responsável por dizer quantos níveis de subcategorias o menu conterá, nesse caso, o 2 representa o nível inicial e mais um nível abaixo -->
+                
             </ul>
         </div> <!-- fim nav-content -->
 

@@ -7,59 +7,69 @@
         <div id="destaque">
             
             <div class="destaque-post">
-            
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/notP1.jpg" rel="" title="" /></a>
+                <!-- sempre abrir o QUERY_POSTS acima do LOOP -->
+                <?php query_posts('category_name=destaques&offset=0&showposts=1'); ?> <!-- pega apenas a categoria destaque (slug da categoria) -->
+                <!-- LOOP --> <!-- offset=0 serve para pegar sempre a ultima postagem -->
+                <!-- showposts serve para exibir apenas uma postagem -->
+                <!-- se existir alguma postagem cadastrada : repete essa postagem : exibe a postagem -->
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                
+                <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
                 <div class="destaque-info">
                     <ul>
-                        <li class="dest-autor">Autor</li>
-                        <li class="dest-views">Views</li>
-                        <li class="dest-coment">Coment</li>
+                        <li class="dest-autor"><?php  the_author(); ?></li> <!-- template tag para exibir nome do autor da postagem --> 
+                        <li class="dest-views"><?php if(function_exists('the_views')) { the_views(); } ?></li> <!-- Se a função/plugin estiver instalado ele exibe as informações desse plugin -->
+                        <li class="dest-coment"><?php comments_number('0', '1', '%'); ?></li> <!-- quando n possuir comentário, exibe 0, se tiver 1 comentário exibe 1, se tiver mais que 1, exibe a quantidade de comentários que a postagem possui -->
                     </ul>
                 </div>
-                <h1><a href="#">GoPro divulga os melhores vídeos gravados em 2017
-</a></h1>
+                <h1><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h1> <!-- template tag the_title() obtem o titulo de um post -->
+                <?php endwhile; else: ?> <!-- está fechando o loop, e caso não tenha nenhuma postagem cadastrada, ele não faz nada -->
+                <?php endif; ?>
+                <!-- the_Permalink() obtém o link automaticamente da postagem -->
                 
                 <div class="list-dest">
                     <ul>
+                        <?php query_posts('category_name=destaques&offset=2&showposts=2'); ?> 
+                        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/not1.jpg" rel="" title=""/></a>
-                            <h2><a href="#">GoPro divulga os melhores vídeos gravados em 2017
-</a></h2>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/not2.jpg" rel="" title=""/></a>
-                            <h2><a href="#">31 apps e jogos para Android que estão grátis por tempo limitado
-</a></h2>
-                        </li>                        
+                            <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                            <h2><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h2>
+                        </li>    
+                        <?php endwhile; else: ?> 
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div><!--fim destaque-post -->
 
             <div class="destaque-post right">
             
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/notP2.jpg" rel="" title="" /></a>
+                <?php query_posts('category_name=destaques&offset=1&showposts=1'); ?> <!-- pega apenas a categoria destaque (slug da categoria) -->
+                <!-- LOOP --> <!-- offset=1 pega sempre a segunda postagem mais reente -->
+                <!-- se existir alguma postagem cadastrada : repete essa postagem : exibe a postagem -->
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                
+                <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
                 <div class="destaque-info">
                     <ul>
-                        <li class="dest-autor">Autor</li>
-                        <li class="dest-views">Views</li>
-                        <li class="dest-coment">Coment</li>
+                        <li class="dest-autor"><?php  the_author(); ?></li> <!-- template tag para exibir nome do autor da postagem --> 
+                        <li class="dest-views"><?php if(function_exists('the_views')) { the_views(); } ?></li> <!-- Se a função/plugin estiver instalado ele exibe as informações desse plugin -->
+                        <li class="dest-coment"><?php comments_number('0', '1', '%'); ?></li> <!-- quando n possuir comentário, exibe 0, se tiver 1 comentário exibe 1, se tiver mais que 1, exibe a quantidade de comentários que a postagem possui -->
                     </ul>
                 </div>
-                <h1><a href="#">Mozilla instala plugin no Firefox para promover 'Mr. Robot' sem avisar usuários
-</a></h1>
+                <h1><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h1> <!-- template tag the_title() obtem o titulo de um post -->
+                <?php endwhile; else: ?> <!-- está fechando o loop, e caso não tenha nenhuma postagem cadastrada, ele não faz nada -->
+                <?php endif; ?>
                 
                 <div class="list-dest">
                     <ul>
+                        <?php query_posts('category_name=destaques&offset=4&showposts=2'); ?> 
+                        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/not3.jpg" rel="" title=""/></a>
-                            <h2><a href="#">Facebook vai penalizar posts 'caça-cliques'
-</a></h2>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/not4.jpg" rel="" title=""/></a>
-                            <h2><a href="#">Google encerra projeto de realidade aumentada após três anos de desenvolvimento
-</a></h2>
-                        </li>                        
+                            <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                            <h2><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></h2>
+                        </li>    
+                        <?php endwhile; else: ?> 
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div><!--fim destaque-post -->            
