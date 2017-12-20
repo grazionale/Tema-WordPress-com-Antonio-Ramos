@@ -183,7 +183,7 @@
                         <li class="saude-coment">Coment</li>
                     </ul>
                 </div> <!-- fim sport-info -->
-                <h1><a href="#">Donec maximus orci et ullamcorper ultricies. Cras aliquam, nibh ut iaculis maximus, elit diam laoreet velit, vitae aliquam ipsum metus at orci. </a></h1>
+                <h1><a href="#">Donec maximus orci et ullamcorper ultricies. Cras aliquam, nibh ut iaculis maximus, elit diam laoreet velit. </a></h1>
                 
                 <div id="saude-list">
                     <ul>

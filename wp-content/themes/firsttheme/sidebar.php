@@ -142,7 +142,13 @@
     </div><!-- fim sidebar-coment -->    
 
     <div id="sidebar-facebook">
-        Facebook
+        
+        <div id="title-facebook"><span>FACEBOOK</span></div>
+        
+        <div id="face-box">
+            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="280" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+        </div> <!-- fim face-box -->
+        
     </div><!-- fim sidebar-facebook -->  
 
 </div><!-- fim sidebar -->
