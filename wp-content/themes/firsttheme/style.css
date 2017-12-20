@@ -261,3 +261,12 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
 #sidebar-colunistas .info-colunistas{ width: 205px; float: left; background: #ed5353; }
 #sidebar-colunistas .info-colunistas ul{ margin: 0; padding: 0; list-style: none; }
 #sidebar-colunistas .info-colunistas ul li{ float: left; width: 20px; height: 20px; padding: 0; margin: 2px 14px; border-bottom: none; }
+
+/*=== publicidade ===*/
+#sidebar-publi{ width: 100%; float: left; margin-top: 30px; }
+#sidebar-publi #title-publicidade {border-bottom: 2px solid #efeeee; padding: 5px 0;}
+#sidebar-publi #title-publicidade span{ font: 22px arial; font-weight: bold; color: #292929; padding: 5px 0; border-bottom: 2px solid #ed5353; }
+#sidebar-publi ul{ margin: 0; padding: 0; list-style: none; }
+#sidebar-publi .publi-maior{ width: 280px; height: 230px; float: left; background: #999; margin: 18px 0; }
+#sidebar-publi .publi-left{ width: 125px; height: 125px; float: left; background: #999; }
+#sidebar-publi .publi-right{ width: 125px; height: 125px; float: right; background: #999; }

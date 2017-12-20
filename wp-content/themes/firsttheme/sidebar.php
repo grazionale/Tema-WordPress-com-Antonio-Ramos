@@ -46,6 +46,58 @@
                         </ul>
                     </div>
                 </li>
+                <li>
+                    <img src="<?php bloginfo('template_url')?>/images/colunista1.jpg" alt="" title="" />
+                    <h1><a href="#">Mr. Robot</a></h1>
+                    
+                    <div class="info-colunistas">
+                        <ul>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/facebook.png" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/google+.png" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/twitter.png" alt="" title="" /></a></li>         
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/youtube.png" alt="" title="" /></a></li>                          
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <img src="<?php bloginfo('template_url')?>/images/colunista1.jpg" alt="" title="" />
+                    <h1><a href="#">Mr. Robot</a></h1>
+                    
+                    <div class="info-colunistas">
+                        <ul>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/facebook.png" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/google+.png" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/twitter.png" alt="" title="" /></a></li>         
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/youtube.png" alt="" title="" /></a></li>                          
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <img src="<?php bloginfo('template_url')?>/images/colunista1.jpg" alt="" title="" />
+                    <h1><a href="#">Mr. Robot</a></h1>
+                    
+                    <div class="info-colunistas">
+                        <ul>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/facebook.png" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/google+.png" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/twitter.png" alt="" title="" /></a></li>         
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/youtube.png" alt="" title="" /></a></li>                          
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <img src="<?php bloginfo('template_url')?>/images/colunista1.jpg" alt="" title="" />
+                    <h1><a href="#">Mr. Robot</a></h1>
+                    
+                    <div class="info-colunistas">
+                        <ul>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/facebook.png" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/google+.png" alt="" title="" /></a></li>
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/twitter.png" alt="" title="" /></a></li>         
+                            <li><a href="#"><img src="<?php bloginfo('template_url')?>/images/youtube.png" alt="" title="" /></a></li>                          
+                        </ul>
+                    </div>
+                </li>                
             </ul>
             
         </div> <!-- fim colunistas -->
@@ -53,7 +105,13 @@
     </div><!-- fim sidebar-colunistas -->
 
     <div id="sidebar-publi">
-        Publicidade
+        <div id="title-publicidade"><span>PUBLICIDADE</span></div>
+        
+        <ul>
+            <li class="publi-maior">Publicidade maior</li>
+            <li class="publi-left">Publicidade left</li>
+            <li class="publi-right">Publicidade right</li>
+        </ul>
     </div><!-- fim sidebar-publi -->            
 
     <div id="sidebar-coment">
