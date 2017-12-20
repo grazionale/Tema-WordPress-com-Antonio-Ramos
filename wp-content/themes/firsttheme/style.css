@@ -288,4 +288,34 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
 #sidebar-facebook #face-box{ margin-top: 20px; }
 
 /*=== Footer ===*/
-#footer{ }
+#footer{ width: 100%; clear: both; background: #222; overflow: hidden; margin-top: 40px; text-align-last: left; }
+#footer-content { width: 1000px; margin: 0 auto; }
+#footer-content #title-footer{ width: 100%; overflow: hidden; border-bottom: 1px solid #333; }
+#footer-content #title-footer span{ float: left; padding: 10px 0; }
+#footer-sobre { width: 330px; float: left; margin-top: 25px; margin-right: 30px; }
+#footer-sobre #title-sobre{ width: 100%; padding: 5px 0; border-bottom: 2px solid #efeeee; margin-bottom: 10px; }
+#footer-sobre #title-sobre span{ font: 22px arial; font-weight: bold; padding: 5.5px 0; color: #f8f8f8; border-bottom: 2px solid #ed5353; }
+#footer-sobre p{ font: 14px arial; color: #bcbbbb; line-height: 18px; padding: 6px 0; }
+
+#footer-paginas{ width: 290px; float: left; margin-top: 25px; }
+#footer-paginas{ width: 330px; float: left; margin-top: 25px; }
+#footer-paginas #title-paginas{ width: 100%; padding: 5px 0; border-bottom: 2px solid #efeeee; margin-bottom: 10px; }
+#footer-paginas #title-paginas span{ font: 22px arial; font-weight: bold; padding: 5.5px 0; color: #f8f8f8; border-bottom: 2px solid #ed5353; }
+#footer-paginas ul{ margin: 0; padding: 0; list-style: none; }
+#footer-paginas ul li{ width: 100%; border-bottom: 1px solid #333; padding: 8px 0; font: 13px arial; font-weight: bold; }
+#footer-paginas ul li a{ color: #f8f8f8; text-decoration: none; }
+#footer-paginas ul li a:hover{ color: #ed5353; text-decoration: underline; }
+
+#footer-recentes{ width: 280px; float: right; margin-top: 25px; }
+#footer-recentes #title-recentes{ width: 100%; padding: 5px 0; border-bottom: 2px solid #efeeee; margin-bottom: 10px; }
+#footer-recentes #title-recentes span{ font: 22px arial; font-weight: bold; padding: 5.5px 0; color: #f8f8f8; border-bottom: 2px solid #ed5353; }
+#footer-recentes ul{ margin: 0; padding: 0; list-style: none; }
+#footer-recentes ul li{ width: 100%; border-bottom: 1px solid #333; padding: 8px 0; font: 13px arial; font-weight: bold; }
+#footer-recentes ul li a{ color: #f8f8f8; text-decoration: none; }
+#footer-recentes ul li a:hover{ color: #ed5353; text-decoration: underline; }
+
+#footer-info{ width: 100%; clear: both; border-top: 1px solid #333; padding: 20px 0; overflow: hidden; float: left; margin-top: 25px; }
+#info-content{ width: 1000px; margin: 0 auto; }
+#info-content span{ float: left; color: #565656; }
+#info-content span b{ color: #a4a6a7; }
+#info-content .info-right{ float: right; }

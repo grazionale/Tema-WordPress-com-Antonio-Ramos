@@ -59,7 +59,7 @@
 
         <div id="search">
             <form action="" method="POST">
-                <input type="text" name="">
+                <input type="text" name="" placeholder="Digite sua pesquisa">
                 <input type="submit" value="" class="btn-search" name="">
             </form>
         </div><!-- fim search -->
