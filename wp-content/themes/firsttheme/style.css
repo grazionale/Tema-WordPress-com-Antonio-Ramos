@@ -121,11 +121,11 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
 #tecnologia .tec-info{ width: 400px; margin: 4px 0px; float: left; }
 #tecnologia .tec-info ul{ margin: 0; padding: 0; list-style: none; }
 #tecnologia .tec-info ul li{ width: 60px; color: #777; float: left; padding: 4px 24px; }
-#tecnologia .tec-info ul .tec-autor{ background: url(images/icon-autor.png) no-repeat left center}
+#tecnologia .tec-info ul .tec-autor{ width: 120px; background: url(images/icon-autor.png) no-repeat left center}
 #tecnologia .tec-info ul .tec-views{ background: url(images/icon-view.png) no-repeat left center}
 #tecnologia .tec-info ul .tec-coment{ background: url(images/icon-coment.png) no-repeat left center}
 #tecnologia .post-tec p { color: #888; float: left; width: 450px; }
-
+#tecnologia .post-tec p a { color: #069; }
 /*=== Entreterimento ===*/
 #entreterimento{ width: 100%; float: left; margin-top: 26px; }
 #entreterimento #title-entreterimento{ border-bottom: 2px solid #efeeee; padding: 5px 0; }
@@ -137,10 +137,11 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center;
 #entreterimento .post-entreterimento h1 a:hover{ text-decoration: underline;  color: #ed5353; }
 #entreterimento .info-entreterimento{ width: 210px; margin: 6px 0; float: left; }
 #entreterimento .info-entreterimento ul{ margin: 0; padding: 0; list-style: none; }
-#entreterimento .info-entreterimento ul li{ width: 60px; float: left; color: #777; background: #900; padding: 4px 20px; }
-#entreterimento .info-entreterimento ul .autor-entreterimento{ background: url(images/icon-autor.png) no-repeat left center}
+#entreterimento .info-entreterimento ul li{ width: 5px; float: left; color: #777; background: #900; padding: 4px 20px; }
+#entreterimento .info-entreterimento ul .autor-entreterimento{ width: 120px; background: url(images/icon-autor.png) no-repeat left center}
 #entreterimento .info-entreterimento ul .coment-entreterimento{ background: url(images/icon-coment.png) no-repeat left center}
 #entreterimento .post-entreterimento p{ font: 14px arial; color: #888; }
+#entreterimento .post-entreterimento p a{ color: #069; }
 
 /*=== Bloco sport Saude ===*/
 #block-sport-saude{ width: 100%; float: left; border-bottom: 1px solid #efeeee; padding: 10px 0; }

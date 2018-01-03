@@ -79,79 +79,47 @@
             
             <div id="title-tec"><span>TECNOLOGIA</span></div>
             
+                <?php query_posts('category_name=tecnologia&offset=0&showposts=2'); ?> 
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                 <div class="post-tec">
 
-                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title=""/></a>
-                        <h1><a href="#">O gogle pode etar preparando versões para blablalbbalblalbalb</a></h1>
+                    <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
+                        <h1><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h1>
 
                         <div class="tec-info">
                             <ul>
-                                <li class="tec-autor">Autor</li>
-                                <li class="tec-views">Views</li>
-                                <li class="tec-coment">Coment</li>
+                                <li class="tec-autor"><?php the_author(); ?></li>
+                                <li class="tec-views"><?php if(function_exists('the_views')) { the_views(); } ?></li>
+                                <li class="tec-coment"><?php comments_number('0', '1', '%'); ?></li>
                             </ul>
                         </div>
-                        <p>O google now, extesnão da ferramente apsokspaokpasokposakpoaskspakaspoksapkas</p>
+                        <p><?php the_excerpt_rereloaded(17, 'Veja Mais'); ?></php></p> <!-- Exibe uma parte do post -->
                 </div>
-            
-                <div class="post-tec">
-
-                    <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title=""/></a>
-                        <h1><a href="#">O gogle pode etar preparando versões para blablalbbalblalbalb</a></h1>
-
-                        <div class="tec-info">
-                            <ul>
-                                <li class="tec-autor">Autor</li>
-                                <li class="tec-views">Views</li>
-                                <li class="tec-coment">Coment</li>
-                            </ul>
-                        </div>
-                        <p>O google now, extesnão da ferramente apsokspaokpasokposakpoaskspakaspoksapkas</p>
-                </div>            
+                <?php endwhile; else: ?> 
+                <?php endif; ?>
+           
         </div><!-- fim tecnologia -->
 
         <div id="entreterimento">
             
             <div id="title-entreterimento"><span>ENTRETERIMENTO</span></div>
             
+            <?php query_posts('category_name=entreterimento&offset=0&showposts=3'); ?> 
+            <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <div class="post-entreterimento">
                 
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
-                <h1><a href="#">POSTAGEM POSTAGEM POSTAGEM POSTAGEM KKKKK</a></h1>
+                <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
+                <h1><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h1>
                 <div class="info-entreterimento">
                     <ul>
-                        <li class="autor-entreterimento">Autor</li>
-                        <li class="coment-entreterimento">Coment</li>
+                        <li class="autor-entreterimento"><?php the_author(); ?></li>
+                        <li class="coment-entreterimento"><?php comments_number('0', '1', '%'); ?></li>
                     </ul>
                 </div>
-                <p>SOJFOJ B APSJDF ASKJB SALSDKJF SDALKJ ASDLFJ ASLKFJ ASLFJ SLFJS DFLK ASDF ASD ASDF AF ASD SADF AS</p>
+                <p><?php the_excerpt_rereloaded(22, 'Veja Mais'); ?></php></p> <!-- Exibe uma parte do post -->
             </div> 
-
-            <div class="post-entreterimento">
-                
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
-                <h1><a href="#">POSTAGEM POSTAGEM POSTAGEM POSTAGEM KKKKK</a></h1>
-                <div class="info-entreterimento">
-                    <ul>
-                        <li class="autor-entreterimento">Autor</li>
-                        <li class="coment-entreterimento">Coment</li>
-                    </ul>
-                </div>
-                <p>SOJFOJ B APSJDF ASKJB SALSDKJF SDALKJ ASDLFJ ASLKFJ ASLFJ SLFJS DFLK ASDF ASD ASDF AF ASD SADF AS</p>
-            </div>
-            
-            <div class="post-entreterimento">
-                
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
-                <h1><a href="#">POSTAGEM POSTAGEM POSTAGEM POSTAGEM KKKKK</a></h1>
-                <div class="info-entreterimento">
-                    <ul>
-                        <li class="autor-entreterimento">Autor</li>
-                        <li class="coment-entreterimento">Coment</li>
-                    </ul>
-                </div>
-                <p>SOJFOJ B APSJDF ASKJB SALSDKJF SDALKJ ASDLFJ ASLKFJ ASLFJ SLFJS DFLK ASDF ASD ASDF AF ASD SADF AS</p>
-            </div>            
+            <?php endwhile; else: ?> 
+            <?php endif; ?>
         </div><!-- fim entreterimento -->
         
         <div id="block-sport-saude"> 
