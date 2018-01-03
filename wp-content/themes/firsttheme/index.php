@@ -127,48 +127,62 @@
             <div id="sport">
                 
                 <div id="title-sport"><span>ESPORTES</span></div>
-                
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
+                <?php query_posts('category_name=esportes&offset=0&showposts=1'); ?> 
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
                 
                 <div class="sport-info">
                     <ul>
-                        <li class="sport-autor">Autor</li>
-                        <li class="sport-views">Views</li>
-                        <li class="sport-coment">Coment</li>
+                        <li class="sport-autor"><?php the_author(); ?></li>
+                        <li class="sport-views"><?php if(function_exists('the_views')) { the_views(); } ?></li>
+                        <li class="sport-coment"><?php comments_number('0', '1', '%'); ?></li>
                     </ul>
                 </div> <!-- fim sport-info -->
-                <h1><a href="#">Sed mattis felis at lacus cursus, et condimentum sapien efficitur. Ut eget ligula in ligula ullamcorper venenatis vitae quis eros.</a></h1>
+                <h1><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h1>
+                <?php endwhile; else: ?> 
+                <?php endif; ?>
                 
                 <div id="sport-list">
                     <ul>
+                        <?php query_posts('category_name=esportes&offset=1&showposts=1'); ?> 
+                        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title="" /></a>
-                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu laoreet dolor, et tempus tellus. Nunc nec ullamcorper metus. </a></h2>
+                            <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
+                            <h2><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h2>
                         </li>
+                        <?php endwhile; else: ?> 
+                        <?php endif; ?>
                     </ul>
                 </div> <!-- fim sport-list -->
             </div><!-- fim sport -->
 
             <div id="saude">
                 <div id="title-saude"><span>SAÚDE</span></div>
-                
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
+                <?php query_posts('category_name=saude&offset=0&showposts=1'); ?> 
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> 
                 
                 <div class="saude-info">
                     <ul>
-                        <li class="saude-autor">Autor</li>
-                        <li class="saude-views">Views</li>
-                        <li class="saude-coment">Coment</li>
+                        <li class="saude-autor"><?php the_author(); ?></li>
+                        <li class="saude-views"><?php if(function_exists('the_views')) { the_views(); } ?></li>
+                        <li class="saude-coment"><?php comments_number('0', '1', '%'); ?></li>
                     </ul>
-                </div> <!-- fim sport-info -->
-                <h1><a href="#">Donec maximus orci et ullamcorper ultricies. Cras aliquam, nibh ut iaculis maximus, elit diam laoreet velit. </a></h1>
+                </div> <!-- fim saude-info -->
+                <h1><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h1>
+                <?php endwhile; else: ?> 
+                <?php endif; ?>
                 
                 <div id="saude-list">
                     <ul>
+                        <?php query_posts('category_name=saude&offset=1&showposts=1'); ?> 
+                        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title="" /></a>
-                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu laoreet dolor, et tempus tellus. Nunc nec ullamcorper metus. </a></h2>
+                            <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
+                            <h2><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h2>
                         </li>
+                        <?php endwhile; else: ?> 
+                        <?php endif; ?>
                     </ul>
                 </div> <!-- fim saude-list -->
             </div><!-- fim saude -->              
@@ -178,25 +192,34 @@
         <div id="bloco-politica-games">
         
             <div id="politica">
+                
                 <div id="title-politica"><span>POLÍTICA</span></div>
                 
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
+                <?php query_posts('category_name=politica&offset=0&showposts=1'); ?> 
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> 
                 
                 <div class="politica-info">
                     <ul>
-                        <li class="politica-autor">Autor</li>
-                        <li class="politica-views">Views</li>
-                        <li class="politica-coment">Coment</li>
+                        <li class="politica-autor"><?php the_author(); ?></li>
+                        <li class="politica-views"><?php if(function_exists('the_views')) { the_views(); } ?></li>
+                        <li class="politica-coment"><?php comments_number('0', '1', '%'); ?></li>
                     </ul>
                 </div> <!-- fim politica-info -->
-                <h1><a href="#">Donec maximus orci et ullamcorper ultricies. Cras aliquam, nibh ut iaculis maximus, elit diam laoreet velit, vitae aliquam ipsum metus at orci. </a></h1>
+                <h1><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h1>
+                <?php endwhile; else: ?> 
+                <?php endif; ?>
                 
                 <div id="politica-list">
                     <ul>
+                        <?php query_posts('category_name=politica&offset=1&showposts=1'); ?> 
+                        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title="" /></a>
-                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu laoreet dolor, et tempus tellus. Nunc nec ullamcorper metus. </a></h2>
+                            <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
+                            <h2><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h2>
                         </li>
+                        <?php endwhile; else: ?> 
+                        <?php endif; ?>
                     </ul>
                 </div> <!-- fim politica-list -->
             </div><!-- fim politica --> 
@@ -204,23 +227,31 @@
             <div id="games">
                 <div id="title-games"><span>GAMES</span></div>
                 
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post3.jpg" rel="" title="" /></a>
+                <?php query_posts('category_name=games&offset=0&showposts=1'); ?> 
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> 
                 
                 <div class="games-info">
                     <ul>
-                        <li class="games-autor">Autor</li>
-                        <li class="games-views">Views</li>
-                        <li class="games-coment">Coment</li>
+                        <li class="games-autor"><?php the_author(); ?></li>
+                        <li class="games-views"><?php if(function_exists('the_views')) { the_views(); } ?></li>
+                        <li class="games-coment"><?php comments_number('0', '1', '%'); ?></li>
                     </ul>
                 </div> <!-- fim politica-info -->
-                <h1><a href="#">Donec maximus orci et ullamcorper ultricies. Cras aliquam, nibh ut iaculis maximus, elit diam laoreet velit, vitae aliquam ipsum metus at orci. </a></h1>
+                <h1><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h1>
+                <?php endwhile; else: ?> 
+                <?php endif; ?>
                 
                 <div id="games-list">
                     <ul>
+                        <?php query_posts('category_name=games&offset=1&showposts=1'); ?> 
+                        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                         <li>
-                            <a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post1.png" rel="" title="" /></a>
-                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu laoreet dolor, et tempus tellus. Nunc nec ullamcorper metus. </a></h2>
+                            <a href="<?php  the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a> <!-- exibe a imagem destacada do post -->
+                            <h2><a href="<?php the_Permalink();  ?>"><?php the_title(); ?></a></h2>
                         </li>
+                        <?php endwhile; else: ?> 
+                        <?php endif; ?>
                     </ul>
                 </div> <!-- fim games-list -->
             </div><!-- fim games -->        
